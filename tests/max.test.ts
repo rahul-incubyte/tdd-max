@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest'
+import { max } from '../src/max'
 
-describe('test', () => {
-  it('should be true', () => {
-    expect(true).toBe(true)
+describe('max', () => {
+  it("returns null for an empty list", () => {
+    expect(max([])).toBeNull()
   })
-});
+})
