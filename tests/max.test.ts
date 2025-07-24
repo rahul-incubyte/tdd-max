@@ -13,4 +13,8 @@ describe('max', () => {
   it("returns the largest number from a list", () => {
     expect(max([10, 5, 42, 3])).toBe(42);
   });
+
+  it("returns the largest negative number", () => {
+    expect(max([-10, -5, -20, -3])).toBe(-3);
+  })
 })
